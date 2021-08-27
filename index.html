@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login and Signup page></title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+<body>
+
+    <div class="form">
+        <div class="login-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-button" onclick="Login()">  LOG IN</button>
+                <button type="button" class="toggle-button" onclick="Signup()"> SIGN UP </button>
+                
+
+            </div>
+            <form id="Login" class="input-map">
+                <input type="text"  class="input-form" placeholder="User Id" required>
+                <input type="text"  class="input-form" placeholder="Enter Password"required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit"  class="submit-button">Log In</button>
+
+            </form>
+            <form id="Signup" class="input-map">
+                <input type="text"  class="input-form" placeholder="User Id" required>
+                <input type="Email Id"  class="input-form" placeholder="Email Id"required>
+                <input type="text"  class="input-form" placeholder="Enter Password"required>
+                <input type="checkbox" class="check-box"><span>Proceed</span>
+                <button type="submit"  class="submit-button">Sign Up</button>
+
+            </form>
+        </div>
+        
+         
+    </div>
+    <script>
+    var k=document.getElementById("Login");
+    var n=document.getElementById("Signup");
+    var m=document.getElementById("btn");
+    function Signup(){
+        k.style.left="-400px";
+        n.style.left="30px";
+        m.style.left="165px";
+        m.style.width="100px";
+    }
+
+
+    function Login(){
+        k.style.left= "30px" ;
+        n.style.left="450px";
+        m.style.left="25px";
+        m.style.width="100px";
+
+    }
+    </script>
+</body>
+</html>
